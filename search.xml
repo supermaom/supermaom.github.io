@@ -18,4 +18,68 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>newpage</title>
+    <url>/2021/06/17/html/</url>
+    <content><![CDATA[<h1 id="Vscode-速写-HTML"><a href="#Vscode-速写-HTML" class="headerlink" title="Vscode 速写 HTML"></a>Vscode 速写 HTML</h1><p>@[toc]</p>
+<h2 id="1-快速生成HTML结构"><a href="#1-快速生成HTML结构" class="headerlink" title="1. 快速生成HTML结构"></a>1. 快速生成HTML结构</h2><p>输入 ! 后按 Tab</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-快速生成标签"><a href="#2-快速生成标签" class="headerlink" title="2. 快速生成标签"></a>2. 快速生成标签</h2><p>输入 元素 后按 Tab , 生成完整标签<br><img src="https://img-blog.csdnimg.cn/20210326221258160.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1N1cGVybWFvenk=,size_16,color_FFFFFF,t_70" alt="Tab联想"></p>
+<h2 id="3-生成指定标签"><a href="#3-生成指定标签" class="headerlink" title="3. 生成指定标签"></a>3. 生成指定标签</h2><p>用 <kbd>*n</kbd> 生成多个标签</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">输入 h2*3 后按Tab            </span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>用 <kbd>^</kbd> <kbd>></kbd> <kbd>+</kbd> 生成父标签、子标签、兄弟标签</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">输入 div&gt;p 后按Tab      </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>                   </span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">输入 div&gt;p^h2 后按Tab</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br><span class="line">输入 div&gt;p+a^h2 后按Tab</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>用 <kbd>$</kbd> 自动计数</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">输入 p&#123;第$章&#125;*3 后按Tab,其中 &#123;&#125; 为文本操作符，可添加文字内容</span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">p</span>&gt;</span>第1章<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">p</span>&gt;</span>第2章<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">p</span>&gt;</span>第3章<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br></pre></td></tr></table></figure>
+
+<p>用 <kbd>[ ]</kbd> <kbd>#</kbd> <kbd>.</kbd> 生成带属性的标签</p>
+<ul>
+<li><kbd>[ ]</kbd> 用于添加任意属性</li>
+<li><kbd>#</kbd> 用于添加id属性</li>
+<li><kbd>.</kbd> 用于添加class属性<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">输入 h2[id=&quot;head1&quot;] 后按Tab</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span> <span class="attr">id</span>=<span class="string">&quot;head1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br><span class="line">输入 h2#head1 后按Tab</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span> <span class="attr">id</span>=<span class="string">&quot;head1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br><span class="line">输入 p.paragraph 后按Tab</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;paragraph&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+用 <kbd>( )</kbd> 分组操作<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">输入 p&gt;&#123;Hello World&#125;*3 后按Tab</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        Hello World</span><br><span class="line">        Hello World</span><br><span class="line">        Hello World</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">输入 (p&gt;&#123;Hello World&#125;)*3 后按Tab</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+隐式标签 , 以<kbd>[ ]</kbd> <kbd>#</kbd> <kbd>.</kbd>开头<table>
+<thead>
+<tr>
+<th>隐式标签</th>
+<th>父级标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>div</td>
+<td>无</td>
+</tr>
+<tr>
+<td>li</td>
+<td>ul,ol</td>
+</tr>
+<tr>
+<td>tr</td>
+<td>table,tbody,thead,tfoot</td>
+</tr>
+<tr>
+<td>td</td>
+<td>tr</td>
+</tr>
+<tr>
+<td>option</td>
+<td>select,optgroup</td>
+</tr>
+</tbody></table>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">在Vscode中, 默认隐式标签均为<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">输入 .aaa 后按Tab</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;aaa&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">输入 ul&gt;.aaa 后按Tab</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;aaa&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="4-插件"><a href="#4-插件" class="headerlink" title="4. 插件"></a>4. 插件</h2>Live Server 插件</li>
+</ul>
+<blockquote>
+<p>在 Vscode 中使用 Open with Live Server 打开 HTML 文件后</p>
+<blockquote>
+<p>在 Vscode 中保存代码后, 会自动更新网页中的内容，不需要 刷新网页 </p>
+</blockquote>
+</blockquote>
+<p>vscode-icons 插件</p>
+<blockquote>
+<p>安装该插件后, 资源管理器中会自动在文件前加上图标</p>
+</blockquote>
+]]></content>
+  </entry>
 </search>
